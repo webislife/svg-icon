@@ -62,15 +62,13 @@ class SVGIcon extends HTMLElement {
         }).catch(err => console.error('svg-icon fetch err', err));
       }
     //Use exist icon from sprite
-    } else {
-      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
-        useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
-  
-      useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', `#${iconName}.svg`);
-      svg.append(useElement);
-      this.appendChild(svg);
-    }
+    } 
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
+      useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
 
+    useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', `#${iconName}.svg`);
+    svg.append(useElement);
+    this.appendChild(svg);
   }
 
   /**

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-component svg-icon</title>
+</head>
+<body>
+    <div class="demo">
+        <svg-icon name="close" />
+        <svg-icon name="bookmark" />
+        <svg-icon name="bookmark" />
+        <svg-icon name="error" />
+        <svg-icon name="arrow-angle-down" class="green"/>
+    </div>
+    <div id="SVG_SPRITE" style="display: none;">
+        <svg><defs></defs></svg>
+    </div>
+    <script type="module" src="./src/demo.ts"></script>
+    <style>
+        svg-icon svg {
+            fill: #f00;
+            width: 20px;
+            height: 20px;
+        }
+        .green svg {
+            fill: #0f0;
+        }
+    </style>
+</body>
+</html>

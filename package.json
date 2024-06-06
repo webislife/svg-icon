@@ -1,0 +1,26 @@
+{
+  "name": "svg-icon",
+  "version": "1.0.0",
+  "description": "Web component for svg icons",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webislife/svg-icon.git"
+  },
+  "keywords": [
+    "web-component",
+    "svg"
+  ],
+  "author": "https://github.com/webislife",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webislife/svg-icon/issues"
+  },
+  "homepage": "https://github.com/webislife/svg-icon#readme",
+  "devDependencies": {
+    "vite": "^5.2.12"
+  }
+}
