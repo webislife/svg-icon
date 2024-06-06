@@ -24,7 +24,6 @@ class SVGIcon extends HTMLElement {
    * @param iconName name of icon
    */
   #loadIcon(iconName:string) {
-    console.log('svg: load icon', iconName);
     const spriteEl = document.getElementById(this.#SPRITE_ID);
     //Check if sprite exist
     if(spriteEl === null) {
